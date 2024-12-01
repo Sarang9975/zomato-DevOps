@@ -59,4 +59,48 @@ const questions = [
   },
 ];
 
+// New Restaurant Data
+export const newRestaurants = [
+  {
+    id: 101,
+    name: "Spice Garden",
+    cuisine: "Indian Fusion",
+    rating: 4.8,
+    deliveryTime: "25-35 min",
+    priceRange: "$$",
+    image: "https://images.unsplash.com/photo-1565299624946-b28f40a0ca4b?w=400",
+    specialties: ["Butter Chicken", "Biryani", "Naan"]
+  },
+  {
+    id: 102,
+    name: "Ocean Delight",
+    cuisine: "Seafood",
+    rating: 4.6,
+    deliveryTime: "30-45 min",
+    priceRange: "$$$",
+    image: "https://images.unsplash.com/photo-1565299624946-b28f40a0ca4b?w=400",
+    specialties: ["Grilled Salmon", "Lobster", "Crab Cakes"]
+  },
+  {
+    id: 103,
+    name: "Veggie Paradise",
+    cuisine: "Vegetarian",
+    rating: 4.7,
+    deliveryTime: "20-30 min",
+    priceRange: "$",
+    image: "https://images.unsplash.com/photo-1565299624946-b28f40a0ca4b?w=400",
+    specialties: ["Quinoa Bowl", "Veggie Burger", "Smoothie"]
+  }
+];
+
+// Enhanced Categories
+export const enhancedCategories = [
+  "Trending Now",
+  "Best Rated",
+  "Fast Delivery",
+  "Budget Friendly",
+  "Premium Dining",
+  "Local Favorites"
+];
+
 export default questions;

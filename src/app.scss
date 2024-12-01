@@ -5,3 +5,41 @@
   padding: 0;
   box-sizing: border-box;
 }
+
+.App {
+  text-align: center;
+  font-family: 'Arial', sans-serif;
+}
+
+/* Enhanced Order Tracking Styles */
+.order-tracking {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  padding: 2rem;
+  margin: 2rem 0;
+  border-radius: 15px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+}
+
+.order-tracking h3 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+}
+
+.order-tracking p {
+  font-size: 1.1rem;
+  opacity: 0.9;
+}
+
+/* Responsive Design Improvements */
+@media (max-width: 768px) {
+  .order-tracking {
+    padding: 1.5rem;
+    margin: 1rem;
+  }
+  
+  .order-tracking h3 {
+    font-size: 1.5rem;
+  }
+}

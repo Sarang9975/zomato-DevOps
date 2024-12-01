@@ -14,6 +14,13 @@ This **Zomato Clone: Secure Deployment with DevSecOps CI/CD** repository is a **
 ✅ **React.js-Based Frontend** – Built with Create React App.  
 ✅ **Production-Ready** – Includes build optimizations & best practices.  
 
+## 🆕 **Recent Updates (December 2024)**
+
+✨ **Enhanced UI Components** - Improved responsive design and accessibility
+🔒 **Security Improvements** - Added input validation and XSS protection
+📱 **Mobile Optimization** - Better touch interactions and mobile layout
+🚀 **Performance Boost** - Reduced bundle size and improved loading speed
+
 > This repo is a great **learning project** for those interested in **DevSecOps, CI/CD, and secure web app deployment**. 🚀
 
 🔗 **Read the detailed blog post:** [Zomato Clone - Secure Deployment with DevSecOps CI/CD](https://blog.prodevopsguytech.com/zomato-clone-secure-deployment-with-devsecops-cicd)  

@@ -1,0 +1,130 @@
+.order-tracking-container {
+  max-width: 800px;
+  margin: 2rem auto;
+  padding: 2rem;
+  background: white;
+  border-radius: 15px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+
+  .tracking-header {
+    text-align: center;
+    margin-bottom: 2rem;
+
+    h2 {
+      color: #333;
+      margin-bottom: 1rem;
+      font-size: 2rem;
+    }
+
+    .order-info {
+      display: flex;
+      justify-content: center;
+      gap: 2rem;
+      font-size: 1.1rem;
+
+      .order-id {
+        color: #667eea;
+        font-weight: bold;
+      }
+
+      .estimated-time {
+        color: #28a745;
+        font-weight: bold;
+      }
+    }
+  }
+
+  .tracking-steps {
+    margin-bottom: 2rem;
+
+    .step {
+      display: flex;
+      align-items: center;
+      margin-bottom: 1.5rem;
+      padding: 1rem;
+      border-radius: 10px;
+      transition: all 0.3s ease;
+
+      &.active {
+        background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        color: white;
+        transform: translateX(10px);
+      }
+
+      .step-icon {
+        font-size: 2rem;
+        margin-right: 1rem;
+        min-width: 50px;
+        text-align: center;
+      }
+
+      .step-content {
+        flex: 1;
+
+        h3 {
+          margin: 0 0 0.5rem 0;
+          font-size: 1.2rem;
+        }
+
+        p {
+          margin: 0;
+          opacity: 0.8;
+        }
+      }
+    }
+  }
+
+  .tracking-actions {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+
+    .action-btn {
+      padding: 0.75rem 1.5rem;
+      border: none;
+      border-radius: 25px;
+      font-weight: bold;
+      cursor: pointer;
+      transition: all 0.3s ease;
+
+      &.primary {
+        background: #667eea;
+        color: white;
+
+        &:hover {
+          background: #5a6fd8;
+          transform: translateY(-2px);
+        }
+      }
+
+      &.secondary {
+        background: transparent;
+        color: #667eea;
+        border: 2px solid #667eea;
+
+        &:hover {
+          background: #667eea;
+          color: white;
+          transform: translateY(-2px);
+        }
+      }
+    }
+  }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .order-tracking-container {
+    margin: 1rem;
+    padding: 1rem;
+
+    .tracking-header .order-info {
+      flex-direction: column;
+      gap: 0.5rem;
+    }
+
+    .tracking-actions {
+      flex-direction: column;
+    }
+  }
+} 

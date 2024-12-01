@@ -17,169 +17,117 @@
 }
 
 .header {
-  position: relative;
-  background: url("../../assets/images/BackGround.png");
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  width: 100%;
-  height: 65vh;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  padding: 1rem 0;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
 
-  @include mobile {
-    height: 50vh;
-  }
-
-  nav {
+  .header-content {
+    max-width: 1200px;
+    margin: 0 auto;
     display: flex;
     align-items: center;
-    justify-content: space-around;
-    padding: 15px 10px;
-
-    @include mobile {
-      display: none;
-    }
-
-    @include tablet {
-      display: none;
-    }
-
-    @include laptop {
-      display: flex;
-    }
-
-    span {
-      color: white;
-      font-size: 16px;
-    }
-
-    .right {
-      display: flex;
-      justify-content: center;
-      gap: 20px;
-
-      span {
-        color: white;
-        font-size: 18px;
-      }
-    }
+    justify-content: space-between;
+    padding: 0 2rem;
   }
 
-  .hamburger {
-    padding: 30px 10px;
-    color: white;
-    z-index: 999;
-    cursor: pointer;
-    position: relative;
-
-    @include laptop {
-      display: none;
-    }
+  .logo h1 {
+    margin: 0;
+    font-size: 1.8rem;
+    font-weight: bold;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
   }
 
-  .sideMenu {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100vh;
-    background-color: white;
-    z-index: 3;
-    transition: all 0.4s ease;
-
-    img {
-      width: 200px;
-      position: absolute;
-      top: 25px;
-      right: 10px;
-    }
-
-    .innerMenu {
-      display: flex;
-      flex-direction: column;
-      padding: 20px;
-      position: absolute;
-      justify-content: flex-start;
-      gap: 30px;
-      top: 20%;
-
-      span {
-        font-size: 18px;
-        color: gray;
-        font-weight: normal;
-      }
-    }
-  }
-
-  .headerContent {
-    position: absolute;
-    width: 100%;
-    top: 30%;
+  .navigation ul {
+    list-style: none;
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    gap: 20px;
+    gap: 2rem;
+    margin: 0;
+    padding: 0;
 
-    img {
-      max-width: 400px;
-
-      @include mobile {
-        width: 200px;
-      }
-
-      @include tablet {
-        width: 300px;
-      }
-    }
-
-    h3 {
+    li a {
       color: white;
-      font-size: 2rem;
-      font-weight: normal;
-      letter-spacing: 0.2rem;
-      @include mobile {
-        letter-spacing: normal;
-        font-size: 1rem;
-      }
+      text-decoration: none;
+      font-weight: 500;
+      transition: color 0.3s ease;
 
-      @include tablet {
-        letter-spacing: normal;
-        font-size: 1.5rem;
+      &:hover {
+        color: #ffd700;
       }
     }
+  }
 
-    .input {
-      min-width: 50%;
-      height: 55px;
+  .search-bar {
+    display: flex;
+    gap: 0.5rem;
+
+    input {
+      padding: 0.5rem 1rem;
       border: none;
-      background-color: white;
-      border-radius: 5px;
-      overflow: hidden;
-      display: flex;
-      align-items: center;
+      border-radius: 25px;
+      width: 300px;
+      font-size: 1rem;
 
-      select {
-        flex: 1;
-        border: none;
+      &:focus {
         outline: none;
-        scroll-behavior: smooth;
-        font-size: 16px;
-        font-weight: normal;
-        color: gray;
-        padding: 8px;
+        box-shadow: 0 0 0 2px #ffd700;
       }
+    }
 
-      input {
-        flex: 2;
-        padding: 8px;
-        border: none;
-        outline: none;
+    button {
+      padding: 0.5rem 1.5rem;
+      background: #ffd700;
+      border: none;
+      border-radius: 25px;
+      color: #333;
+      font-weight: bold;
+      cursor: pointer;
+      transition: background 0.3s ease;
 
-        &::placeholder {
-          font-size: 16px;
-          font-weight: normal;
-        }
+      &:hover {
+        background: #ffed4e;
       }
+    }
+  }
+
+  .theme-toggle {
+    .theme-btn {
+      background: transparent;
+      border: 2px solid white;
+      border-radius: 50%;
+      width: 40px;
+      height: 40px;
+      cursor: pointer;
+      font-size: 1.2rem;
+      transition: all 0.3s ease;
+
+      &:hover {
+        background: white;
+        color: #667eea;
+        transform: scale(1.1);
+      }
+    }
+  }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .header {
+    .header-content {
+      flex-direction: column;
+      gap: 1rem;
+      padding: 0 1rem;
+    }
+
+    .navigation ul {
+      gap: 1rem;
+    }
+
+    .search-bar input {
+      width: 250px;
     }
   }
 }

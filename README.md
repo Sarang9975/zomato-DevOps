@@ -1,3 +1,23 @@
+# Zomato Clone
+
+A modern food delivery application built with React and Node.js.
+
+## Features
+
+- User authentication and authorization
+- Restaurant browsing and search
+- Food ordering and delivery tracking
+- Payment integration
+- Real-time order updates
+- Responsive design for mobile and desktop
+
+## New Features
+
+- Enhanced search functionality with filters
+- Improved user interface components
+- Better error handling and validation
+- Performance optimizations
+
 # 🍽️ **Zomato Clone: Secure Deployment with DevSecOps CI/CD**  
 
 ![Zomato Clone](https://miro.medium.com/v2/resize:fit:1400/format:webp/1*X_hm5iF0NRjbOZHB6RQIFA.jpeg)  
@@ -13,13 +33,6 @@ This **Zomato Clone: Secure Deployment with DevSecOps CI/CD** repository is a **
 ✅ **Optimized Deployment** – Uses containerization & cloud hosting.  
 ✅ **React.js-Based Frontend** – Built with Create React App.  
 ✅ **Production-Ready** – Includes build optimizations & best practices.  
-
-## 🆕 **Recent Updates (December 2024)**
-
-✨ **Enhanced UI Components** - Improved responsive design and accessibility
-🔒 **Security Improvements** - Added input validation and XSS protection
-📱 **Mobile Optimization** - Better touch interactions and mobile layout
-🚀 **Performance Boost** - Reduced bundle size and improved loading speed
 
 > This repo is a great **learning project** for those interested in **DevSecOps, CI/CD, and secure web app deployment**. 🚀
 

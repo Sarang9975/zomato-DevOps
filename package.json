@@ -1,26 +1,32 @@
 {
-  "name": "zomato-clone-enhanced",
-  "version": "2.0.0",
-  "description": "Enhanced Zomato Clone with improved UI, security features, and mobile optimization",
+  "name": "zomato_clone",
+  "version": "1.0.0",
   "private": true,
+  "engines": {
+    "node": ">=16 <19"
+  },
   "dependencies": {
-    "@testing-library/jest-dom": "^5.16.4",
-    "@testing-library/react": "^13.3.0",
-    "@testing-library/user-event": "^13.5.0",
+    "@emotion/react": "^11.11.0",
+    "@emotion/styled": "^11.11.0",
+    "@mui/icons-material": "^5.14.0",
+    "@mui/material": "^5.14.0",
+    "@testing-library/jest-dom": "^5.17.0",
+    "@testing-library/react": "^14.0.0",
+    "@testing-library/user-event": "^14.5.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-    "react-scripts": "5.0.1",
-    "web-vitals": "^2.1.4"
+    "react-scripts": "^5.0.1",
+    "sass": "^1.63.0",
+    "web-vitals": "^3.0.0"
   },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
+    "dev": "react-scripts start",
     "lint": "eslint src/**/*.{js,jsx}",
-    "lint:fix": "eslint --fix src/**/*.{js,jsx}",
-    "analyze": "npm run build && npx webpack-bundle-analyzer build/static/js/*.js",
-    "deploy:preview": "npm run build && serve -s build -l 3001"
+    "format": "prettier --write src/**/*.{js,jsx,css,md}"
   },
   "eslintConfig": {
     "extends": [
@@ -35,25 +41,12 @@
       "not op_mini all"
     ],
     "development": [
-      "last 1 chrome version",
-      "last 1 firefox version",
-      "last 1 safari version"
+      "last 2 chrome versions",
+      "last 2 firefox versions",
+      "last 2 safari versions"
     ]
   },
   "devDependencies": {
-    "eslint": "^8.0.0",
-    "eslint-plugin-react": "^7.0.0",
-    "serve": "^14.0.0"
-  },
-  "keywords": [
-    "zomato-clone",
-    "react",
-    "food-delivery",
-    "devsecops",
-    "cicd",
-    "mobile-optimized",
-    "secure-deployment"
-  ],
-  "author": "DevSecOps Team",
-  "license": "MIT"
+    "prettier": "^3.1.0"
+  }
 }
